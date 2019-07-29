@@ -1,0 +1,69 @@
+{
+    "editor.tabSize": 2,
+    "stylelint.enable": true,
+    "eslint.enable": true,
+    "javascript.format.insertSpaceAfterConstructor": true,
+    // 定义函数参数括号前的空格处理方式。
+    "javascript.format.insertSpaceBeforeFunctionParenthesis": true,
+    // 保存时设置文件的格式。格式化程序必须可用，不能自动保存文件，并且不能关闭编辑器。
+    "editor.formatOnSave": true,
+    // 为指定的语法定义配置文件或使用带有特定规则的配置文件。
+    "emmet.syntaxProfiles": {
+      "vue-html": "html",
+      "vue": "html",
+      "javascript": "jsx"
+    },
+    // 打开或关闭保存时自动修复。
+    "eslint.autoFixOnSave": true,
+    // 区域的默认格式化HTML
+    // - none:禁用格式设置
+    // - prettyhtml:prettyHTML
+    // - js-beautify-html:JS美化的HTML格式化程序
+    // - prettier:更漂亮
+    "vetur.format.defaultFormatter.html": "prettyhtml",
+    // 区域的默认格式化js
+    // -none: 禁用格式设置
+    // -prettier: JS格式设置工具来自prettier
+    // -prettier-eslint: 更漂亮的eslint
+    // -vscode-typescript: js格式设置工具来自typescript
+    "vetur.format.defaultFormatter.js": "vscode-typescript",
+    //所有默认格式设置工具的选项
+    "vetur.format.defaultFormatterOptions": {
+      "wrap_attributes": "force-aligned"
+    },
+    // 应该由eslint验证后缀文件的数组
+    "eslint.validate": [
+      "javascript",
+      "javascriptreact",
+      "html",
+      "vue",
+      {
+        "language": "html",
+        "autoFix": true
+      }
+    ],
+    // 文件自动保存方式
+    // "files.autoSave": "afterDelay",
+    // 控制自动保存已更新文件的延迟时间 (毫秒)。仅在 `files.autoSave` 设置为
+    // "files.autoSaveDelay": 10000
+    // 指定工作台中使用的颜色主题。默认 "Default Dark+"
+    "workbench.colorTheme": "Default Dark+",
+    // 控制资源管理器是否在把文件删除到废纸篓时进行确认。
+    "explorer.confirmDelete": true,
+    // 在默认不支持 Emmet 的语言中启用 Emmet 缩写功能。在此添加该语言与受支持的语言间的映射。
+    "emmet.includeLanguages": {
+      // 编写react代码 jsx中html标签tab键自动补全
+      "javascript": "javascriptreact"
+    },
+    //提供从命令行执行时通常传递给eslint的参数的eslint options对象
+    "eslint.options": {
+      "plugins": ["html"]
+    },
+    // 去掉代码结尾的分号
+    "prettier.semi": false,
+    "prettier.singleQuote": true,
+    // 同步 Git 存储库前请先进行确认。
+    "git.confirmSync": false
+    //头部注释配置
+  }
+  
