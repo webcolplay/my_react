@@ -5,6 +5,7 @@ import VisibleTodoList from '../containers/VisibleTodoList'
 import { BrowserRouter as Router } from 'react-router-dom'
 import Nav from './Nav'
 import getRouter from '../router'
+import Sider from '@/Menu/index.js'
 
 const App = () => (
   // <div>
@@ -13,7 +14,7 @@ const App = () => (
   //   <Footer />
   // </div>
   <Router>
-    <Nav />
+    <Sider />
     {getRouter()}
   </Router>
 )
